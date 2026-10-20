@@ -8,7 +8,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     exit;
 }
 
-$event = $_GET['event'] ?? 'visit';
+$event = $_GET['event'] ?? 'all';
 $allowed_events = ['visit', 'login_success', 'login_fail', 'all'];
 if (!in_array($event, $allowed_events, true)) {
     $event = 'visit';
