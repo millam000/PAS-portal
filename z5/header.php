@@ -52,16 +52,14 @@ if (session_status() === PHP_SESSION_NONE) {
                                 <li><a class="dropdown-item" href="monitorowanie.php">Panel monitorowania</a></li>
                                 <li><a class="dropdown-item" href="dodaj.php">Dodaj host</a></li>
                                 <li><a class="dropdown-item" href="kasu.php">Usuń host</a></li>
-                                <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin']): ?>
-                                    <li><a class="dropdown-item" href="staff.php">Przydziel pracownika</a></li>
-                                <?php endif; ?>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Polecenia 5.x</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="mycloud.php">MyCloud - Dysk sieciowy</a></li>
+                                <li><a class="dropdown-item" href="mycloud.php">MyCloud</a></li>
+                                <li><a class="dropdown-item" href="polecenie3_4.php">Lista logowań</a></li>
                             </ul>
                         </li>
                     </ul>
